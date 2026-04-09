@@ -1,0 +1,7 @@
+{
+  "extension.displayName": "{{Display Name}}",
+  "extension.description": "{{A short description of what this extension does}}",
+  "command.activate":   "Activate {{Display Name}}",
+  "command.deactivate": "Deactivate {{Display Name}}",
+  "command.settings":   "{{Display Name}} Settings"
+}

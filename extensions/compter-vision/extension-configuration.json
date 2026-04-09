@@ -1,0 +1,20 @@
+{
+  "extensionId": "{{extension-id}}",
+  "schemaVersion": "1.0",
+  "permissions": [
+    "playback.read"
+  ],
+  "resourceLimits": {
+    "maxMemoryMb":     64,
+    "maxCpuPercent":   10,
+    "maxNetworkKbps":  512
+  },
+  "featureFlags": {
+    "experimentalApi": false,
+    "debugMode":       false
+  },
+  "apiScopes": [
+    "playback.read"
+  ],
+  "sandboxed": true
+}

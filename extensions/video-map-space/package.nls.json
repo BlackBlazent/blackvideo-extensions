@@ -1,0 +1,7 @@
+{
+  "extension.displayName": "Video Map Space",
+  "extension.description": "A map integration extension for BlackVideo that leverages Google Maps APIs to support geographic-based video analysis.",
+  "command.activate": "Activate Video Map Space",
+  "command.deactivate": "Deactivate Video Map Space",
+  "command.settings": "Video Map Space Settings"
+}

@@ -1,0 +1,15 @@
+{
+  "registrations": [
+    {
+      "component": {
+        "type": "git",
+        "git": {
+          "name": "video-map-space",
+          "repositoryUrl": "https://github.com/jednaz-lonestamp/video-map-space",
+          "commitHash": ""
+        }
+      }
+    }
+  ],
+  "version": 1
+}

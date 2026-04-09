@@ -1,0 +1,35 @@
+{
+  "name": "video-map-space",
+  "version": "1.0.0",
+  "description": "A map integration extension for BlackVideo that leverages Google Maps APIs to support geographic-based video analysis.",
+  "author": "Jednaz Lonestamp",
+  "license": "MIT",
+  "main": "index.ts",
+  "blackvideo": {
+    "displayName": "Video Map Space",
+    "authorClass": "jednaz-lonestamp",
+    "type": "extension",
+    "license": "free",
+    "icon": "icon.png",
+    "entry": "index.ts",
+    "uiEntry": "src/components/extension.container.card",
+    "permissions": [
+      {
+        "scope": "playback.read",
+        "reason": "Video Map Space reads playback state"
+      }
+    ],
+    "playbackHooks": true,
+    "uiSupport": true,
+    "cliSupport": false
+  },
+  "scripts": {
+    "dev": "blackvideo-ext dev",
+    "build": "blackvideo-ext build",
+    "validate": "blackvideo-ext validate",
+    "publish": "blackvideo-ext publish"
+  },
+  "devDependencies": {
+    "typescript": ">=5.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "{{extension-id}}",
+  "name": "{{extension-id}}",
+  "displayName": "{{Display Name}}",
+  "description": "{{A short description of what this extension does}}",
+  "version": "1.0.0",
+  "author": "{{Author Name}}",
+  "authorClass": "{{authorclass}}",
+  "type": "extension",
+  "license": "free",
+  "icon": "icon.png",
+  "entry": "index.ts",
+  "uiEntry": "src/components/extension.container.card",
+  "permissions": [
+    {
+      "scope": "playback.read",
+      "reason": "Reads current playback state to display in the extension panel"
+    }
+  ],
+  "playbackHooks": true,
+  "uiSupport": true,
+  "cliSupport": false
+}

@@ -1,0 +1,36 @@
+{
+  "name": "{{extension-id}}",
+  "version": "1.0.0",
+  "description": "{{A short description of what this extension does}}",
+  "author": "{{Author Name}}",
+  "license": "MIT",
+  "main": "index.ts",
+  "blackvideo": {
+    "displayName": "{{Display Name}}",
+    "authorClass": "{{authorclass}}",
+    "type": "extension",
+    "license": "free",
+    "icon": "icon.png",
+    "entry": "index.ts",
+    "uiEntry": "src/components/extension.container.card",
+    "permissions": [
+      {
+        "scope": "playback.read",
+        "reason": "Reads playback state to provide extension functionality"
+      }
+    ],
+    "playbackHooks": true,
+    "uiSupport": true,
+    "cliSupport": false
+  },
+  "scripts": {
+    "dev":      "blackvideo-ext dev",
+    "build":    "blackvideo-ext build",
+    "validate": "blackvideo-ext validate",
+    "publish":  "blackvideo-ext publish"
+  },
+  "devDependencies": {
+    "typescript": ">=5.0.0"
+  },
+   "updateUrl": "https://yourdomain.com/extensions/computer-vision/manifest.json"
+}

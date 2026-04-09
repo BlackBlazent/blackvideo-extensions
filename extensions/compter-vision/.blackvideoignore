@@ -1,0 +1,15 @@
+# BlackVideo Extension — ignore file
+# Files listed here are excluded from .bvx packaging and marketplace upload.
+
+node_modules/
+dist/
+*.log
+*.map
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.test.ts
+*.spec.ts
+__tests__/
+coverage/
