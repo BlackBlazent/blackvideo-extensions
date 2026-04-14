@@ -1,0 +1,82 @@
+{
+  "_meta": {
+    "generated": "2026-04-14T00:00:00.000Z",
+    "repo": "BlackBlazent/blackvideo-extensions",
+    "version": "1",
+    "description": "Curated marketplace index for BlackVideo extensions. Updated automatically on each GitHub release by the bvx publish pipeline. Consumed as a fallback by the BlackVideo app and Centric Website when Convex is unreachable."
+  },
+  "extensions": [
+    {
+      "id": "computer-vision",
+      "slug": "computer-vision",
+      "name": "Computer Vision Tools",
+      "tagline": "Object detection, tracking, and scene analysis powered by OpenCV.",
+      "description": "Provides real-time object detection, motion tracking, and scene classification directly inside the BlackVideo playback stage. Integrates with VideoTheaterStage hooks to annotate video frames without affecting the source file.",
+      "version": "1.0.0",
+      "author": "BlackBlazent",
+      "authorClass": "blackblazent",
+      "category": "extensions",
+      "type": "extension",
+      "license": "free",
+      "tags": ["cv", "detection", "tracking", "analysis"],
+      "iconUrl": "https://raw.githubusercontent.com/BlackBlazent/blackvideo-extensions/main/extensions/compter-vision/icon.png",
+      "bannerUrl": null,
+      "screenshots": [],
+      "githubRepo": "BlackBlazent/blackvideo-extensions",
+      "githubReleaseTag": "computer-vision@1.0.0",
+      "downloadUrl": "https://github.com/BlackBlazent/blackvideo-extensions/releases/download/computer-vision%401.0.0/computer-vision-1.0.0.bvx",
+      "downloadCount": 0,
+      "starCount": 0,
+      "featured": true,
+      "status": "published",
+      "publishedAt": 1744588800000,
+      "permissions": [
+        {
+          "scope": "playback.read",
+          "reason": "Reads video frames and current timestamp from VideoTheaterStage to run detection on active playback."
+        }
+      ],
+      "playbackHooks": true,
+      "uiSupport": true,
+      "cliSupport": true
+    },
+    {
+      "id": "video-map-space",
+      "slug": "video-map-space",
+      "name": "Video Map Space",
+      "tagline": "Geographic video analysis with interactive map overlays.",
+      "description": "Integrates Google Maps APIs into the BlackVideo playback stage. Synchronises map position with video timestamp, enabling geographic-based analysis of location-tagged footage.",
+      "version": "1.0.0",
+      "author": "Jednaz Lonestamp",
+      "authorClass": "jednaz-lonestamp",
+      "category": "extensions",
+      "type": "extension",
+      "license": "free",
+      "tags": ["map", "geo", "location", "forensics"],
+      "iconUrl": "https://raw.githubusercontent.com/BlackBlazent/blackvideo-extensions/main/extensions/video-map-space/icon.png",
+      "bannerUrl": null,
+      "screenshots": [],
+      "githubRepo": "BlackBlazent/blackvideo-extensions",
+      "githubReleaseTag": "video-map-space@1.0.0",
+      "downloadUrl": "https://github.com/BlackBlazent/blackvideo-extensions/releases/download/video-map-space%401.0.0/video-map-space-1.0.0.bvx",
+      "downloadCount": 0,
+      "starCount": 0,
+      "featured": false,
+      "status": "published",
+      "publishedAt": 1744588800000,
+      "permissions": [
+        {
+          "scope": "playback.read",
+          "reason": "Reads the current video timestamp to synchronise the map marker with video playback position."
+        },
+        {
+          "scope": "network.fetch",
+          "reason": "Fetches map tiles and location data from Google Maps APIs."
+        }
+      ],
+      "playbackHooks": true,
+      "uiSupport": true,
+      "cliSupport": false
+    }
+  ]
+}
